@@ -1,6 +1,6 @@
 ﻿# Integration tests using top-level statements
 
-Top-level statements are a handy compiler feature introduced with .NET 6.0 that allows us to implicitly specify our app entry-point by writing statements outside of a type declaration:
+Top-level statements are a handy compiler feature introduced with .NET 5.0 that allows us to implicitly specify our app entry-point by writing statements outside of a type declaration:
 
 ```csharp
 // So, rather than this...
