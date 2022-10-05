@@ -27,7 +27,7 @@ To simplify things, the CLR will automatically handle preprocessor directives (i
 
 ## Implementation
 
-The console app itself is an implementation of Microsoft's [magic .NET answer machine](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) introducing developers to top-level statements. This implementation goes slightly further and implements an IoC Container, the [default IHost implementation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-6.0), to map a configuration source to a DTO - helping to segregate our business logic from our application logic.
+The console app itself is an implementation of Microsoft's [magic .NET answer machine](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) introducing developers to top-level statements. This implementation goes slightly further and makes use of an IoC Container, the [default IHost implementation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-6.0), to map a configuration source to a DTO - helping to segregate our business logic from our application logic.
 
 There are an abundance of great tutorials for console apps using top-level statements, however one thing missing from the conversation is how to leverage our entry-point method for integration testing. Testing a main method is something of a taboo in the field of software engineering, however it's important not to let high-level output be forgotten about when implementing a testing strategy, which usually focuses on TDD and incrementing functionality unit-by-unit. 
 
